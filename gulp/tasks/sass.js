@@ -5,6 +5,9 @@ import autoprefixer from 'autoprefixer';
 import gulpif from 'gulp-if';
 import gulp from 'gulp';
 import fancyLog from 'fancy-log';
+import atImport from 'postcss-import';
+import postcss from 'gulp-postcss';
+import tailwindcss from 'tailwindcss';
 import { plugins, args, config, taskTarget, browserSync } from '../utils';
 
 let dirs = config.directories;
@@ -30,7 +33,8 @@ gulp.task('sass', () => {
     .on('error', function(err) {
       fancyLog(err);
     })
-    .pipe(plugins.postcss([autoprefixer()]))
+    // .pipe(plugins.postcss([tailwindcss('./tailwind.config.js'),autoprefixer()]))
+    .pipe(plugins.postcss([atImport(),tailwindcss('./tailwind.config.js'),autoprefixer()]))
     .pipe(
       plugins.rename(function(path) {
         // Remove 'source' directory as well as prefixed folder underscores
