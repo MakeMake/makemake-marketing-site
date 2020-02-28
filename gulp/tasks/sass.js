@@ -33,7 +33,6 @@ gulp.task('sass', () => {
     .on('error', function(err) {
       fancyLog(err);
     })
-    // .pipe(plugins.postcss([tailwindcss('./tailwind.config.js'),autoprefixer()]))
     .pipe(plugins.postcss([atImport(),tailwindcss('./tailwind.config.js'),autoprefixer()]))
     .pipe(
       plugins.rename(function(path) {

@@ -1,0 +1,8 @@
+header#header.py-8.flex.items-center.justify-between
+  .logo
+    img(src="./images/FullLogo.svg").h-10 
+  nav.nav
+    ul.flex
+      each item in site.data.menu
+        li.nav-item.pl-4.py-1.tracking-wide.font-medium(class='hover:text-gray-600')
+          a(href=item.path)= item.name

@@ -1,0 +1,7 @@
+include ../button/button
+
+.hero.bg-indigo-600.p-10.rounded-lg.py-20
+  div(class="md:w-1/2")
+    h1.text-white.text-5xl.font-bold.leading-tight.pb-4= site.data.global.heroTitle
+    p.text-2xl.text-indigo-300= site.data.global.heroDescription
+    +button('/', 'Make your app')(class="mt-10 bg-white hover:bg-indigo-300 text-indigo-600 text-xl")
