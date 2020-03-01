@@ -6,7 +6,7 @@ include ../button/button
     nav.nav
       ul.flex.items-center
         each item in site.data.menu
-          li.nav-item.mr-10.py-1.tracking-wide.font-medium.text-black(class='hover:text-gray-600')
+          li.nav-item.mr-10.py-1.tracking-wide.font-medium.text-black.hidden(class='lg:block hover:text-mm-blue-600')
             a(href=item.path)= item.name
         //- li.nav-item.mr-10.ml-10.py-1.tracking-wide.font-medium.text-mm-blue-600(class='hover:text-indigo-400')
         //-   a(href="/") login

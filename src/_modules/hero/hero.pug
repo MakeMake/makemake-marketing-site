@@ -1,9 +1,8 @@
 include ../button/button
 include ../heading/heading
 
-.hero.bg-mm-blue-500.p-10.rounded-lg.py-20.shadow-2xl
-  div(class="lg:w-1/2")
+.hero.p-10.rounded-lg.py-20.shadow-2xl.bg-black
+  div(class="lg:w-7/12 xl:w-5/12")
     +h1(site.data.global.heroTitle)(class="text-white")
-    p.text-2xl.text-mm-blue-300= site.data.global.heroDescription
-    //- +button('/', 'Make your app')(class="mt-10 bg-white hover:bg-indigo-300 text-indigo-600 text-xl")
-    +button("/", "Get early access", "white", "mm-blue-600", "mm-blue-300", "xl")(class="mt-10")
+    p.text-2xl(class="text-gray-500")!= site.data.global.heroDescription
+    +button("/", "Get early access", "", "", "", "xl")(class="mt-10")

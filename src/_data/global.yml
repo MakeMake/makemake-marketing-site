@@ -1,31 +1,44 @@
 siteName: Makemake
-heroTitle: The easy and faster way to make a production-ready application
-heroDescription: All you need to know is HTML & CSS
+heroTitle: The <span class="text-mm-green-500">easy</span> and <span class="text-mm-green-500">faster</span> way to make a production-ready application
+heroDescription: All you need to know is <span class="text-mm-green-500">HTML</span> & <span class="text-mm-green-500">CSS</span>
 features:
   title: How it works
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   list:
-    - title: Create your database
+    - color: mm-blue
+      title: Create your database
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: Connect and play with your data
+    - color: mm-blue
+      title: Connect and play with your data
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: Design your app
+    - color: mm-blue
+      title: Design your app
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: host
+    - color: mm-blue
+      title: host
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 featuresDetail:
   title: Features detail
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   list:
-    - title: Data table
+    - color: mm-green
+      title: Data table
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: Formulas
+    - color: mm-green
+      title: Formulas
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: Data relations
+    - color: mm-green
+      title: Data relations
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: Login and permission
+    - color: mm-green
+      title: Login and permission
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: Components
+    - color: mm-green
+      title: Components
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: css framework
+    - color: mm-green
+      title: css framework
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - title: zappier integration
+    - color: mm-green
+      title: zappier integration
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
