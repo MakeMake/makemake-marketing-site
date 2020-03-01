@@ -9,14 +9,12 @@ block content
   .container.mx-auto.px-4
     include _modules/hero/hero
     +section
-      +h2(site.data.global.features.title)
-      p.text-gray-500.mb-12.text-lg= site.data.global.features.description
+      +h2WithDescription(site.data.global.features.title, site.data.global.features.description)(class="mb-12")
       div(class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12")
         each item in site.data.global.features.list
           +featureDetail(item)
     +section
-      +h2(site.data.global.featuresDetail.title)
-      p.text-gray-500.mb-12= site.data.global.featuresDetail.description
+      +h2WithDescription(site.data.global.featuresDetail.title, site.data.global.featuresDetail.description)(class="mb-12")
       div(class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12")
         each item in site.data.global.featuresDetail.list
           +featureDetail(item)

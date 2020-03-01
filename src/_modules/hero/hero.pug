@@ -4,5 +4,5 @@ include ../heading/heading
 .hero.p-10.rounded-lg.py-20.shadow-2xl.bg-black
   div(class="lg:w-7/12 xl:w-5/12")
     +h1(site.data.global.heroTitle)(class="text-white")
-    p.text-2xl(class="text-gray-500")!= site.data.global.heroDescription
+    p.text-2xl.font-light(class="text-gray-500")!= site.data.global.heroDescription
     +button("/", "Get early access", "", "", "", "xl")(class="mt-10")

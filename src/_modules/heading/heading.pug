@@ -3,3 +3,8 @@ mixin h1(heading)
 
 mixin h2(heading)
   h2.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-3xl lg:text-4xl")!= heading
+
+mixin h2WithDescription(heading, description)
+  .mb-5(class!=attributes.class)
+    h2.font-bold.leading-tight.text-black.mb-2(class="text-3xl lg:text-4xl")!= heading
+    p.text-lg.text-gray-600.font-light= description
