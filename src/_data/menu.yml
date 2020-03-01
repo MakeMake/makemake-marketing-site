@@ -1,4 +1,6 @@
 - path: /
+  name: Product
+- path: /
   name: Use case
 - path: /
   name: Pricing

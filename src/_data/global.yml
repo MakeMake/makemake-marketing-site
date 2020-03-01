@@ -1,22 +1,25 @@
 siteName: Makemake
-heroTitle: The <span class="text-mm-green-500">easy</span> and <span class="text-mm-green-500">faster</span> way to make a production-ready application
+heroTitle: The <span class="text-mm-green-500">easiest</span> and <span class="text-mm-green-500">fastest</span> way to make an production-ready application
 heroDescription: All you need to know is <span class="text-mm-green-500">HTML</span> & <span class="text-mm-green-500">CSS</span>
 features:
-  title: How it works
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  title: A complete solution for all product
+  description: Create an app for social platform, dating, project management, job board ... and everything you can imagine
   list:
-    - color: mm-blue
-      title: Create your database
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - color: mm-blue
-      title: Connect and play with your data
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - color: mm-blue
-      title: Design your app
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    - color: mm-blue
-      title: host
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    - color: mm-red
+      title: <span class="text-mm-red-500">User friendly</span> database
+      description: Create a database with a simple table extensible with formulas and zappier integration.
+    - color: mm-red
+      title: <span class="text-mm-red-500">Included</span> authentication
+      description: Manage your user with included login and permission solution.
+    - color: mm-red
+      title: <span class="text-mm-red-500">Natural</span> language
+      description: Access to your data and play with it in the simplest of ways.
+    - color: mm-red
+      title: <span class="text-mm-red-500">Standard</span> templating
+      description: Design your application with Vue.js. One of the most popular js framework
+    - color: mm-red
+      title: <span class="text-mm-red-500">Simplified</span> hosting
+      description: Publish and share your application with very little configuration
 featuresDetail:
   title: Features detail
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -40,5 +43,5 @@ featuresDetail:
       title: css framework
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     - color: mm-green
-      title: zappier integration
+      title: zapier integration
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
