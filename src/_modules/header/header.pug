@@ -1,8 +1,11 @@
-header#header.py-8.flex.items-center.justify-between
+include ../button/button
+
+header#header.py-12.flex.items-center.justify-between
   .logo
     img(src="./images/FullLogo.svg").h-10 
   nav.nav
-    ul.flex
+    ul.flex.items-center
       each item in site.data.menu
-        li.nav-item.pl-4.py-1.tracking-wide.font-medium(class='hover:text-gray-600')
+        li.nav-item.mr-10.py-1.tracking-wide.font-medium(class='hover:text-gray-600')
           a(href=item.path)= item.name
+      +button("/", "Get started")

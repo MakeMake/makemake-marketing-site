@@ -1,3 +1,6 @@
-mixin button(href, name)
-  a.px-6.py-2.bg-black.text-white.inline-block.rounded.tracking-wide.font-medium.text-lg(class!=attributes.class href=href)= name 
- 
+mixin button(href, name, bg, text, hover, size)
+  - bg = bg || 'indigo-600'
+  - text = text || 'white'
+  - hover = hover || 'indigo-400'
+  - size = size || 'base'
+  a.px-6.py-2.inline-block.rounded.tracking-wide.font-medium.transition.duration-150.ease-in-out(class!=attributes.class class="bg-" + bg + " text-" + text + " hover:bg-" + hover + " text-" + size href=href)= name 

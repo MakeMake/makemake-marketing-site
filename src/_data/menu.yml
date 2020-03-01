@@ -2,3 +2,5 @@
   name: Use case
 - path: /
   name: Pricing
+- path: /
+  name: Documentation

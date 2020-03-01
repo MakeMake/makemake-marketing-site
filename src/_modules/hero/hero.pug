@@ -1,7 +1,9 @@
 include ../button/button
+include ../heading/heading
 
 .hero.bg-indigo-600.p-10.rounded-lg.py-20
-  div(class="md:w-1/2")
-    h1.text-white.text-5xl.font-bold.leading-tight.pb-4= site.data.global.heroTitle
+  div(class="lg:w-1/2")
+    +h1(site.data.global.heroTitle)(class="text-white")
     p.text-2xl.text-indigo-300= site.data.global.heroDescription
-    +button('/', 'Make your app')(class="mt-10 bg-white hover:bg-indigo-300 text-indigo-600 text-xl")
+    //- +button('/', 'Make your app')(class="mt-10 bg-white hover:bg-indigo-300 text-indigo-600 text-xl")
+    +button("/", "Get started", "white", "indigo-600", "indigo-300", "xl")(class="mt-10")
