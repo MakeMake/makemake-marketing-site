@@ -1,11 +1,13 @@
 include ../button/button
-
-header#header.py-12.flex.items-center.justify-between
-  .logo
-    img(src="./images/FullLogo.svg").h-10 
-  nav.nav
-    ul.flex.items-center
-      each item in site.data.menu
-        li.nav-item.mr-10.py-1.tracking-wide.font-medium(class='hover:text-gray-600')
-          a(href=item.path)= item.name
-      +button("/", "Get started")
+.sticky.top-0.bg-white
+  header#header.container.mx-auto.px-4.flex.items-center.justify-between(class="py-8 lg:py-12")
+    .logo
+      img(src="./images/FullLogo.svg").h-10 
+    nav.nav
+      ul.flex.items-center
+        each item in site.data.menu
+          li.nav-item.mr-10.py-1.tracking-wide.font-medium(class='hover:text-gray-600')
+            a(href=item.path)= item.name
+        //- li.nav-item.mr-10.ml-10.py-1.tracking-wide.font-medium.text-indigo-600(class='hover:text-indigo-400')
+        //-   a(href="/") login
+        +button("/", "Get early access")
