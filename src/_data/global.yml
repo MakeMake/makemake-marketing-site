@@ -1,6 +1,6 @@
 siteName: Makemake
 heroTitle: The <span class="text-mm-green-500">easiest</span> and <span class="text-mm-green-500">fastest</span> way to make an production-ready application
-heroDescription: All you need to know is <span class="text-mm-green-500">HTML</span> & <span class="text-mm-green-500">CSS</span>
+heroDescription: Bring your ideas to life. All you need to know is <span class="text-mm-green-500">HTML</span> & <span class="text-mm-green-500">CSS</span>
 features:
   title: A complete solution for all product
   description: Create an app for social platform, dating, project management, job board ... and everything you can imagine
@@ -18,6 +18,9 @@ features:
       title: <span class="text-mm-red-500">Standard</span> templating
       description: Design your application with Vue.js. One of the most popular js framework
     - color: mm-red
+      title: <span class="text-mm-red-500">Complete</span> library
+      description: Use a large library of template and components.
+    - color: mm-red
       title: <span class="text-mm-red-500">Simplified</span> hosting
       description: Publish and share your application with very little configuration
 featuresDetail:
@@ -26,22 +29,22 @@ featuresDetail:
   list:
     - color: mm-green
       title: Data table
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      description: Design your data collections with the simplicity of a table.
     - color: mm-green
       title: Formulas
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      description: Extend your datas by playing with formulas in your data table.
     - color: mm-green
-      title: Data relations
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      title: Relations
+      description: Connect your data collections with each other.
     - color: mm-green
       title: Login and permission
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      description: Build the best experience for your end-users.
     - color: mm-green
       title: Components
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      description: Create and uses plenty of components and facilitate your app design.
     - color: mm-green
-      title: css framework
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      title: CSS framework
+      description: Work with your favorite CSS framework.
     - color: mm-green
-      title: zapier integration
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      title: Zapier integration
+      description: Extend the possibility with zapier and automate your workflows.
