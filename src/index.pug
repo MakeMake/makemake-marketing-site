@@ -13,7 +13,7 @@ block content
     +h2WithDescription(site.data.global.features.title, site.data.global.features.description)
     div(class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6")
       each feature in site.data.global.features.list
-        +tile(feature, feature.color, "./images/Icon.svg")
+        +tile(feature, "./images/Icon.svg")
     each feature in site.data.global.features.list
       +section(feature.path)
         +h2WithDescription(feature.title, feature.description)

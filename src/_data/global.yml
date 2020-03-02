@@ -1,6 +1,6 @@
 siteName: Makemake
-heroTitle: The <span class="text-mm-green-500">easiest</span> and <span class="text-mm-green-500">fastest</span> way to make an production-ready application
-heroDescription: Bring your ideas to life. All you need to know is <span class="text-mm-green-500">HTML</span> & <span class="text-mm-green-500">CSS</span>
+heroTitle: The <span class="text-green-500">easiest</span> and <span class="text-green-500">fastest</span> way to make an production-ready application
+heroDescription: Bring your ideas to life. All you need to know is <span class="text-green-500">HTML</span> & <span class="text-green-500">CSS</span>
 
 
 features:
@@ -10,7 +10,9 @@ features:
     - title: User friendly database
       description: Create a database with a simple table extensible with formulas and zappier integration.
       path: database
-      color: mm-red
+      color: red
+      colorPrimary: 100
+      colorSecondary: 900
       list:
         - title: Data table
           description: Design your data collections with the simplicity of a table.
@@ -21,7 +23,9 @@ features:
     - title: Included authentication
       description: Manage your user with included login and permission solution.
       path: auth
-      color: mm-blue
+      color: blue
+      colorPrimary: 100
+      colorSecondary: 300
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -32,7 +36,9 @@ features:
     - title: Natural language
       description: Access to your data and play with it in the simplest of ways.
       path: lang
-      color: mm-green
+      color: green
+      colorPrimary: 900
+      colorSecondary: 900
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -43,7 +49,9 @@ features:
     - title: Standard templating
       description: Design your application with Vue.js. One of the most popular js framework
       path: templating
-      color: orange
+      color: purple
+      colorPrimary: 100
+      colorSecondary: 300
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -54,7 +62,9 @@ features:
     - title: Complete library
       description: Use a large library of template and components and CSS Frameworks.
       path: library
-      color: pink
+      color: yellow
+      colorPrimary: 900
+      colorSecondary: 900
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -65,7 +75,9 @@ features:
     - title: Simplified hosting
       description: Publish and share your application with very little configuration
       path: hosting
-      color: indigo
+      color: pink
+      colorPrimary: 100
+      colorSecondary: 900
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -84,24 +96,24 @@ features:
 #   title: Features
 #   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 #   list:
-#     - color: mm-green
+#     - color: green
 #       title: Data table
 #       description: Design your data collections with the simplicity of a table.
-#     - color: mm-green
+#     - color: green
 #       title: Formulas
 #       description: Extend your datas by playing with formulas in your data table.
-#     - color: mm-green
+#     - color: green
 #       title: Relations
 #       description: Connect your data collections with each other.
-#     - color: mm-green
+#     - color: green
 #       title: Login and permission
 #       description: Build the best experience for your end-users.
-#     - color: mm-green
+#     - color: green
 #       title: Components
 #       description: Create and uses plenty of components and facilitate your app design.
-#     - color: mm-green
+#     - color: green
 #       title: CSS framework
 #       description: Work with your favorite CSS framework.
-#     - color: mm-green
+#     - color: green
 #       title: Zapier integration
 #       description: Extend the possibility with zapier and automate your workflows.

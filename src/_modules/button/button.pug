@@ -1,7 +1,7 @@
 mixin button(href, name, bg, text, hover, size)
-  - bg = bg || 'mm-blue-500'
+  - bg = bg || 'blue-500'
   - text = text || 'white'
-  - hover = hover || 'mm-blue-600'
+  - hover = hover || 'blue-600'
   - size = size || 'base'
   a.px-6.py-2.inline-block.rounded.tracking-wide.font-medium.transition.duration-150.ease-in-out(class!=attributes.class class="hover:shadow-lg	bg-" + bg + " text-" + text + " hover:bg-" + hover + " text-" + size href=href)
     .flex.items-center
