@@ -1,5 +1,5 @@
 include ../button/button
-.sticky.top-0.bg-white
+.sticky.top-0.bg-white.z-50
   header#header.container.mx-auto.px-4.flex.items-center.justify-between(class="py-8 lg:py-12")
     .logo
       img(src="./images/FullLogo.svg").h-10 
@@ -10,4 +10,6 @@ include ../button/button
             a(href=item.path)= item.name
         //- li.nav-item.mr-10.ml-10.py-1.tracking-wide.font-medium.text-mm-blue-600(class='hover:text-indigo-400')
         //-   a(href="/") login
-        +button("/", "Get early access")
+        +button("/")
+          | Get early access
+          i.ml-1(data-feather="arrow-right", class= "text-white")
