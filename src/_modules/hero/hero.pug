@@ -1,10 +1,13 @@
 include ../button/button
 include ../heading/heading
 
-.hero.p-10.rounded-lg.py-20.shadow-2xl.bg-black
-  div(class="lg:w-7/12 xl:w-5/12")
-    +h1(site.data.global.heroTitle)(class="text-white")
-    p.text-2xl.font-light(class="text-gray-500")!= site.data.global.heroDescription
-    +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank", "", "", "", "", "xl")(class="mt-10")
-      | Get early access
-      i.ml-1(data-feather="arrow-right", class= "text-white")
+mixin hero(title, description, bg, titleColor, descriptionColor)
+  - bg = bg || 'black'
+  - titleColor = titleColor || 'white'
+  - descriptionColor = descriptionColor || 'gray-500'
+  .hero.p-10.rounded-lg.py-20.shadow-2xl(class="bg-" + bg)
+    div(class="lg:w-7/12 xl:w-5/12")
+      +h1(title)(class="text-" + titleColor)
+      p.text-2xl.font-light(class="text-" + descriptionColor)!= description
+      if block
+        block

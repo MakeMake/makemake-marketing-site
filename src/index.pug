@@ -4,10 +4,14 @@ include _modules/link/link
 include _modules/section/section
 include _modules/feature/feature
 include _modules/heading/heading
+include _modules/hero/hero
 
 block content
   .container.mx-auto.px-4
-    include _modules/hero/hero
+    +hero(site.data.global.heroTitle, site.data.global.heroDescription)
+      +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank", "", "", "", "", "xl")(class="mt-10")
+        | Get early access
+        i.ml-1(data-feather="arrow-right", class= "text-white")
     
     +section
     +h2WithDescription(site.data.global.features.title, site.data.global.features.description)(class="mb-8")

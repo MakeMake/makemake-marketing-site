@@ -1,0 +1,9 @@
+title: Find the plan that's right for you
+description: Start as free, or as low as US$39 a month.
+plan:
+  - title: Free
+    price: 0
+  - title: Pro
+    price: 39
+  - title: Business
+    price: 199

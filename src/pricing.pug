@@ -2,8 +2,23 @@ extends _layouts/base
 
 include _modules/heading/heading
 include _modules/section/section
+include _modules/hero/hero
+include _modules/button/button
 
 block content
   .container.mx-auto.px-4
+    +hero(site.data.pricing.title, site.data.pricing.description, "red-500", "red-100", "red-900")
     +section
-      +h1("Pricing")
+      div(class="grid grid-cols-1 lg:grid-cols-3 gap-6 xl:gap-12")
+        each plan in site.data.pricing.plan
+          .flex.flex-col.justify-between.p-4.border.border-solid.border-gray-300.bg-gray-100.rounded-lg
+            div
+              +h3(plan.title)
+              p.inline
+                span.font-light.text-xl.align-top.text-gray-600 $
+                span.font-bold.text-5xl.text-blue-500.leading-none= plan.price
+                span.font-light.text-xl.text-gray-600 /mo
+            div.mt-4
+              +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank")(class="w-full", wrapperClass="justify-center")
+                | Get early access
+                i.ml-1(data-feather="arrow-right", class= "text-white")

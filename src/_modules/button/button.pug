@@ -4,7 +4,7 @@ mixin button(href, target, name, bg, text, hover, size)
   - hover = hover || 'blue-600'
   - size = size || 'base'
   a.px-6.py-2.inline-block.rounded.tracking-wide.font-medium.transition.duration-150.ease-in-out(class!=attributes.class class="hover:shadow-lg	bg-" + bg + " text-" + text + " hover:bg-" + hover + " text-" + size href=href target=target)
-    .flex.items-center
+    .flex.items-center(class!=attributes.wrapperClass)
       if block
         block
       else
