@@ -23,6 +23,8 @@ block content
         div(class="grid grid-cols-2 md:grid-cols-3 gap-6 xl:gap-12")
           each item in feature.list
             +feature(item, feature.color)
+    
+  include _modules/footer/footer
         
     //- +section
     //-   +h2WithDescription(site.data.global.features.title, site.data.global.features.description)(class="mb-12")

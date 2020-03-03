@@ -1,16 +1,15 @@
 include ../button/button
+include ../link/link
 .sticky.top-0.bg-white.z-50
   header#header.relative.bg-white.container.mx-auto.px-4.flex.items-center.justify-between.z-20(class="py-8 lg:py-12")
     .logo
       img(src="./images/FullLogo.svg").h-10 
     nav.nav
       ul.flex.items-center
-        each item in site.data.menu
-          li.nav-item.mr-10.py-1.tracking-wide.font-medium.text-black.hidden(class='lg:block hover:text-blue-600')
-            a(href=item.path)= item.name
-        //- li.nav-item.mr-10.ml-10.py-1.tracking-wide.font-medium.text-blue-600(class='hover:text-indigo-400')
-        //-   a(href="/") login
-        +button("/")
+        each item in site.data.menu.header
+          li.nav-item.mr-10.py-1.hidden(class="lg:block")
+            +link("/", item.name)
+        +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank")
           | Get early access
           i.ml-1(data-feather="arrow-right", class= "text-white")
   .container.mx-auto.absolute.inset-0.z-10.mb-2

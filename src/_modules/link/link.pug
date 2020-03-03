@@ -1,10 +1,9 @@
-mixin link(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
-  - spec.text = spec.text || 'Default Link'
-
-  a.link(class=spec.__class)&attributes(attributes)
+mixin link(href, name, color, hover, size)
+  - color = color || 'black'
+  - hover = hover || 'blue-500'
+  - size = size || 'base'
+  a.tracking-wide.font-medium.text-black.transition.duration-150.ease-in-out(class!=attributes.class class="text-" + color + " hover:text-" + hover + " text-" + size href=href)
     if block
       block
     else
-      != spec.text
+      != name  

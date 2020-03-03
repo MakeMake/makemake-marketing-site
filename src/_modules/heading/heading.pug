@@ -1,8 +1,26 @@
-mixin h1(heading)
-  h1.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-4xl lg:text-5xl")!= heading
+mixin h1(heading, color)
+  - color = color || 'black'
+  h1.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-4xl lg:text-5xl text-" + color)!= heading
 
-mixin h2(heading)
-  h2.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-3xl lg:text-4xl")!= heading
+mixin h2(heading, color)
+  - color = color || 'black'
+  h2.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-3xl lg:text-4xl text-" + color)!= heading
+  
+mixin h3(heading, color)
+  - color = color || 'black'
+  h3.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-2xl lg:text-3xl text-" + color)!= heading
+  
+mixin h4(heading, color)
+  - color = color || 'black'
+  h4.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-1xl lg:text-2xl text-" + color)!= heading
+  
+mixin h5(heading, color)
+  - color = color || 'black'
+  h5.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-lg lg:text-xl text-" + color)!= heading
+  
+mixin h6(heading, color)
+  - color = color || 'black'
+  h6.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-base lg:text-lg text-" + color)!= heading
 
 mixin h2WithDescription(heading, description)
   div(class!=attributes.class)

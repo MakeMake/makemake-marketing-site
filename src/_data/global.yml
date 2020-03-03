@@ -17,10 +17,13 @@ features:
       list:
         - title: Data table
           description: Design your data collections with the simplicity of a table.
+          illustration:
         - title: Relations
           description: Connect your data collections with each other.
+          illustration:
         - title: Formulas
           description: Extend your datas by playing with formulas in your data table.
+          illustration:
     - title: Included authentication
       description: Manage your user with included login and permission solution.
       path: auth
@@ -31,10 +34,13 @@ features:
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
+          illustration:
         - title: Permissions
           description: Connect your data collections with each other.
+          illustration:
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
+          illustration:
     - title: Easy interactions
       description: Create & update data and play with it in the simplest of ways.
       path: lang
@@ -45,10 +51,13 @@ features:
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
+          illustration:
         - title: Permissions
           description: Connect your data collections with each other.
+          illustration:
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
+          illustration:
     - title: Standard templating
       description: Design your application with Vue.js. One of the most popular js framework
       path: templating
@@ -59,10 +68,13 @@ features:
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
+          illustration:
         - title: Permissions
           description: Connect your data collections with each other.
+          illustration:
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
+          illustration:
     - title: Complete library
       description: Use a large library of template, components and CSS Frameworks.
       path: library
@@ -73,10 +85,13 @@ features:
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
+          illustration:
         - title: Permissions
           description: Connect your data collections with each other.
+          illustration:
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
+          illustration:
     - title: Simple hosting
       description: Publish and share your application with very little configuration
       path: hosting
@@ -87,12 +102,13 @@ features:
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
+          illustration:
         - title: Permissions
           description: Connect your data collections with each other.
+          illustration:
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
-
-
+          illustration: 
 # features:
 #   title: A complete solution for all product
 #   description: Create an app for social platform, dating, project management, job board ... and everything you can imagine

@@ -1,8 +1,41 @@
-- path: /
-  name: Product
-- path: /
-  name: Use case
-- path: /
-  name: Pricing
-- path: /
-  name: Documentation
+header:
+  - path: /
+    name: Product
+  - path: /
+    name: Use case
+  - path: /
+    name: Pricing
+  - path: /
+    name: Documentation
+
+footer:
+  - name: Product
+    links:
+      - path: /
+        name: Overview
+      - path: /
+        name: Use case
+      - path: /
+        name: Pricing
+  - name: Ressources
+    links:
+      - path: /
+        name: Documentation
+      - path: /
+        name: Templates
+      - path: /
+        name: Demo
+      - path: /
+        name: Blog
+  - name: Company
+    links:
+      - path: /
+        name: About
+      - path: /
+        name: Contact us
+      - path: /
+        name: Twitter @makemake
+      - path: /
+        name: Terms
+      - path: /
+        name: Privacy
