@@ -13,7 +13,7 @@ features:
       color: red
       colorPrimary: 100
       colorSecondary: 900
-      illustration: ./images/illustrations/Database.svg
+      illustration: ./images/Database.svg
       list:
         - title: Data table
           description: Design your data collections with the simplicity of a table.
@@ -27,7 +27,7 @@ features:
       color: blue
       colorPrimary: 100
       colorSecondary: 300
-      illustration: ./images/illustrations/Auth.svg
+      illustration: ./images/Auth.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -41,7 +41,7 @@ features:
       color: green
       colorPrimary: 900
       colorSecondary: 900
-      illustration: ./images/illustrations/Interaction.svg
+      illustration: ./images/Interaction.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -55,7 +55,7 @@ features:
       color: purple
       colorPrimary: 100
       colorSecondary: 300
-      illustration: ./images/illustrations/Templating.svg
+      illustration: ./images/Templating.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -69,7 +69,7 @@ features:
       color: yellow
       colorPrimary: 900
       colorSecondary: 900
-      illustration: ./images/illustrations/Library.svg
+      illustration: ./images/Library.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -83,7 +83,7 @@ features:
       color: pink
       colorPrimary: 100
       colorSecondary: 900
-      illustration: ./images/illustrations/Host.svg
+      illustration: ./images/Host.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
