@@ -18,7 +18,7 @@ block content
       +section(feature.path)
         .flex.flex-1.items-center.mb-8
           .p-6.rounded-full.mr-4(class= "bg-" + feature.color + "-500")
-            img.h-10(src=feature.illustration)
+            img.h-10(src!=feature.illustration)
           +h2WithDescription(feature.title, feature.description)
         div(class="grid grid-cols-2 md:grid-cols-3 gap-6 xl:gap-12")
           each item in feature.list
