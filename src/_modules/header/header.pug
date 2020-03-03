@@ -2,13 +2,13 @@ include ../button/button
 include ../link/link
 .sticky.top-0.bg-white.z-50
   header#header.relative.bg-white.container.mx-auto.px-4.flex.items-center.justify-between.z-20(class="py-8 lg:py-12")
-    .logo
+    a.logo(href="/")
       img(src="./images/FullLogo.svg").h-10 
     nav.nav
       ul.flex.items-center
         each item in site.data.menu.header
           li.nav-item.mr-10.py-1.hidden(class="lg:block")
-            +link("/", item.name)
+            +link(item.path, item.name)
         +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank")
           | Get early access
           i.ml-1(data-feather="arrow-right", class= "text-white")

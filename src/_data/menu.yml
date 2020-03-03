@@ -3,7 +3,7 @@ header:
     name: Product
   - path: /
     name: Use case
-  - path: /
+  - path: /pricing.html
     name: Pricing
   - path: /
     name: Documentation
@@ -15,7 +15,7 @@ footer:
         name: Overview
       - path: /
         name: Use case
-      - path: /
+      - path: /pricing.html
         name: Pricing
   - name: Ressources
     links:
