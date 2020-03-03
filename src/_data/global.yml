@@ -13,6 +13,7 @@ features:
       color: red
       colorPrimary: 100
       colorSecondary: 900
+      illustration: ./images/illustrations/Database.svg
       list:
         - title: Data table
           description: Design your data collections with the simplicity of a table.
@@ -26,6 +27,7 @@ features:
       color: blue
       colorPrimary: 100
       colorSecondary: 300
+      illustration: ./images/illustrations/Auth.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -33,12 +35,13 @@ features:
           description: Connect your data collections with each other.
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
-    - title: Natural language
-      description: Access to your data and play with it in the simplest of ways.
+    - title: Easy interactions
+      description: Create & update data and play with it in the simplest of ways.
       path: lang
       color: green
       colorPrimary: 900
       colorSecondary: 900
+      illustration: ./images/illustrations/Interaction.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -52,6 +55,7 @@ features:
       color: purple
       colorPrimary: 100
       colorSecondary: 300
+      illustration: ./images/illustrations/Templating.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -60,11 +64,12 @@ features:
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
     - title: Complete library
-      description: Use a large library of template and components and CSS Frameworks.
+      description: Use a large library of template, components and CSS Frameworks.
       path: library
       color: yellow
       colorPrimary: 900
       colorSecondary: 900
+      illustration: ./images/illustrations/Library.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.
@@ -72,12 +77,13 @@ features:
           description: Connect your data collections with each other.
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
-    - title: Simplified hosting
+    - title: Simple hosting
       description: Publish and share your application with very little configuration
       path: hosting
       color: pink
       colorPrimary: 100
       colorSecondary: 900
+      illustration: ./images/illustrations/Host.svg
       list:
         - title: Login
           description: Design your data collections with the simplicity of a table.

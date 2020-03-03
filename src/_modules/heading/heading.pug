@@ -5,11 +5,11 @@ mixin h2(heading)
   h2.font-bold.leading-tight.mb-5.text-black(class!=attributes.class class="text-3xl lg:text-4xl")!= heading
 
 mixin h2WithDescription(heading, description)
-  .mb-5(class!=attributes.class)
+  div(class!=attributes.class)
     h2.font-bold.leading-tight.text-black.mb-2(class="text-3xl lg:text-4xl")!= heading
     p.text-lg.text-gray-600.font-light!= description
 
 mixin h3WithDescription(heading, description)
-  .mb-5(class!=attributes.class)
+  div(class!=attributes.class)
     h3.font-bold.leading-tight.text-black.mb-2(class="text-2xl lg:text-3xl")!= heading
     p.text-base.text-gray-600.font-light!= description
