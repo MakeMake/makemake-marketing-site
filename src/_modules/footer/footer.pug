@@ -2,9 +2,12 @@ include ../heading/heading
 
 .bg-gray-200.py-24
   .container.mx-auto.px-4
-    div(class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6")
+    div(class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6")
+      .flex.flex-col
+        img.mb-4.w-40(src="./images/FullLogoGray.svg")
+        p.text-gray-600 © 2020 Makemake
       each group in site.data.menu.footer
         .flex.flex-col
           +h6(group.name, "gray-700")
           each item in group.links
-            +link("/", item.name, "gray-600", "gray-700", "sm")(class="py-1")
+            +link(item.path, item.name, "gray-600", "gray-700", "sm")(class="py-1")

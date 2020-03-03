@@ -33,8 +33,8 @@ footer:
         name: About
       - path: /
         name: Contact us
-      - path: /
-        name: Twitter @makemake
+      - path: https://twitter.com/MakeMakeYourApp
+        name: Twitter @MakeMakeYourApp
       - path: /
         name: Terms
       - path: /
