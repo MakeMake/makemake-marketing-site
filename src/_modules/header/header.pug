@@ -1,6 +1,6 @@
 include ../button/button
 .sticky.top-0.bg-white.z-50
-  header#header.container.mx-auto.px-4.flex.items-center.justify-between(class="py-8 lg:py-12")
+  header#header.relative.bg-white.container.mx-auto.px-4.flex.items-center.justify-between.z-20(class="py-8 lg:py-12")
     .logo
       img(src="./images/FullLogo.svg").h-10 
     nav.nav
@@ -13,3 +13,5 @@ include ../button/button
         +button("/")
           | Get early access
           i.ml-1(data-feather="arrow-right", class= "text-white")
+  .container.mx-auto.absolute.inset-0.z-10
+    .absolute.bg-white.inset-0.shadow-lg.mx-6
