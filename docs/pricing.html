@@ -19,18 +19,37 @@
   <div class="sticky top-0 bg-white z-50">
     <header class="relative bg-white container mx-auto px-4 flex items-center justify-between z-20 py-8 lg:py-12" id="header"><a class="logo" href="/"><img class="h-10" src="./images/FullLogo.svg"></a>
       <nav class="nav">
-        <ul class="flex items-center">
-          <li class="nav-item mr-10 py-1 hidden lg:block"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Product</a>
-          </li>
-          <li class="nav-item mr-10 py-1 hidden lg:block"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Use case</a>
-          </li>
-          <li class="nav-item mr-10 py-1 hidden lg:block"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/pricing.html">Pricing</a>
-          </li>
-          <li class="nav-item mr-10 py-1 hidden lg:block"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Documentation</a>
-          </li><a class="px-6 py-2 inline-block rounded tracking-wide font-medium transition duration-150 ease-in-out hover:shadow-lg	bg-blue-500 text-white hover:bg-blue-600 text-base" href="https://airtable.com/shrnxdC4vhzlslUda" target="_blank">
-              <div class="flex items-center">Get early access<i class="ml-1 text-white" data-feather="arrow-right"></i>
-              </div></a>
+        <ul class="flex items-center hidden lg:flex">
+            <li class="nav-item mr-10 py-2"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Product</a>
+            </li>
+            <li class="nav-item mr-10 py-2"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Use case</a>
+            </li>
+            <li class="nav-item mr-10 py-2"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item mr-10 py-2"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Documentation</a>
+            </li>
+            <div :class="{ 'pt-4': menuOpen === true }"><a class="px-6 py-2 inline-block rounded tracking-wide font-medium transition duration-150 ease-in-out hover:shadow-lg	bg-blue-500 text-white hover:bg-blue-600 text-base" href="https://airtable.com/shrnxdC4vhzlslUda" target="_blank">
+                  <div class="flex items-center">Get early access<i class="ml-1 text-white" data-feather="arrow-right"></i>
+                  </div></a>
+            </div>
         </ul>
+        <div class="relative lg:hidden" x-data="{ menuOpen: false }">
+          <div class="cursor-pointer hover:text-blue-500" @click="menuOpen = true" :class="{ 'text-blue-500': menuOpen === true }"><i class="ml-1 black" data-feather="menu"></i></div>
+          <ul class="flex flex-col absolute right-0 p-8 bg-white shadow-lg rounded-lg origin-top-right border border-gray-200 mt-4" x-show="menuOpen" @click.away="menuOpen = false" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95">
+              <li class="nav-item mr-10 py-2"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Product</a>
+              </li>
+              <li class="nav-item mr-10 py-2"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Use case</a>
+              </li>
+              <li class="nav-item mr-10 py-2"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item mr-10 py-2"><a class="tracking-wide font-medium text-black transition duration-150 ease-in-out text-black hover:text-blue-500 text-base" href="/">Documentation</a>
+              </li>
+              <div :class="{ 'pt-4': menuOpen === true }"><a class="px-6 py-2 inline-block rounded tracking-wide font-medium transition duration-150 ease-in-out hover:shadow-lg	bg-blue-500 text-white hover:bg-blue-600 text-base" href="https://airtable.com/shrnxdC4vhzlslUda" target="_blank">
+                    <div class="flex items-center">Get early access<i class="ml-1 text-white" data-feather="arrow-right"></i>
+                    </div></a>
+              </div>
+          </ul>
+        </div>
       </nav>
     </header>
     <div class="container mx-auto absolute inset-0 z-10 mb-2">
@@ -97,5 +116,5 @@
       </div>
     </div>
   </div>
-  <script src="./scripts/main-cb201cec53.js"></script>
+  <script src="./scripts/main-b46bc74be9.js"></script>
 </body></html>

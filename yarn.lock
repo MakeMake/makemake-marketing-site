@@ -675,6 +675,10 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
 
+alpinejs@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-2.1.0.tgz#22919b03928f0890ef1c6388eaf695b8accff356"
+
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"

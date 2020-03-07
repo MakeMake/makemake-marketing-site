@@ -1,16 +1,28 @@
 include ../button/button
 include ../link/link
+
+mixin menu()
+  each item in site.data.menu.header
+    li.nav-item.mr-10.py-2
+      +link(item.path, item.name)
+  div(:class="{ 'pt-4': menuOpen === true }")
+    +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank")
+      | Get early access
+      i.ml-1(data-feather="arrow-right", class= "text-white")
+
 .sticky.top-0.bg-white.z-50
   header#header.relative.bg-white.container.mx-auto.px-4.flex.items-center.justify-between.z-20(class="py-8 lg:py-12")
     a.logo(href="/")
       img(src="./images/FullLogo.svg").h-10 
     nav.nav
-      ul.flex.items-center
-        each item in site.data.menu.header
-          li.nav-item.mr-10.py-1.hidden(class="lg:block")
-            +link(item.path, item.name)
-        +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank")
-          | Get early access
-          i.ml-1(data-feather="arrow-right", class= "text-white")
+      
+      ul.flex.items-center.hidden(class="lg:flex")
+        +menu()
+              
+      div.relative(x-data='{ menuOpen: false }', class="lg:hidden")
+        div.cursor-pointer(@click='menuOpen = true', class='hover:text-blue-500', :class="{ 'text-blue-500': menuOpen === true }")
+            i.ml-1(data-feather="menu", class= "black")
+        ul.flex.flex-col.absolute.right-0.p-8.bg-white.shadow-lg.rounded-lg.origin-top-right.border.border-gray-200.mt-4(x-show='menuOpen' @click.away='menuOpen = false' x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95")
+          +menu()
   .container.mx-auto.absolute.inset-0.z-10.mb-2
     .absolute.bg-white.inset-0.shadow-lg.mx-6

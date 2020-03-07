@@ -8,6 +8,7 @@ include _modules/hero/hero
 
 block content
   .container.mx-auto.px-4
+    
     +hero(site.data.global.heroTitle, site.data.global.heroDescription)
       +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank", "", "", "", "", "xl")(class="mt-10")
         | Get early access
