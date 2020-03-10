@@ -6,7 +6,7 @@ mixin hero(title, description, bg, titleColor, descriptionColor, illustration)
   - titleColor = titleColor || 'white'
   - descriptionColor = descriptionColor || 'gray-500'
   - illustration = illustration || ''
-  .hero.p-10.rounded-lg.py-20.shadow-2xl.flex.flex-col.items-end(class="bg-" + bg + " xl:flex-row")
+  .hero.px-5.rounded-lg.py-20.shadow-2xl.flex.flex-col.items-end(class="bg-" + bg + " xl:flex-row sm:px-10")
     div(class="w-full xl:w-5/12 text-center xl:text-left")
       +h1(title)(class="text-" + titleColor)
       p.text-2xl.font-light(class="text-" + descriptionColor)!= description
