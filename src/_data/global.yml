@@ -1,7 +1,7 @@
 siteName: Makemake
-heroTitle: The <span class="text-green-500">easiest</span> and <span class="text-green-500">fastest</span> way to make an production-ready application
+heroTitle: The <span class="text-green-500">easiest</span> and <span class="text-green-500">fastest</span> way to make an production-ready <span class="text-green-500">application</span>
 heroDescription: Bring your ideas to life. All you need to know is <span class="text-green-500">HTML</span> & <span class="text-green-500">CSS</span>
-
+heroIllustration: ./images/ApplicationIllustration.png
 
 features:
   title: A complete solution for all product
@@ -108,7 +108,7 @@ features:
           illustration:
         - title: Security
           description: Extend your datas by playing with formulas in your data table.
-          illustration: 
+          illustration:
 # features:
 #   title: A complete solution for all product
 #   description: Create an app for social platform, dating, project management, job board ... and everything you can imagine

@@ -1,13 +1,17 @@
 include ../button/button
 include ../heading/heading
 
-mixin hero(title, description, bg, titleColor, descriptionColor)
+mixin hero(title, description, bg, titleColor, descriptionColor, illustration)
   - bg = bg || 'black'
   - titleColor = titleColor || 'white'
   - descriptionColor = descriptionColor || 'gray-500'
-  .hero.p-10.rounded-lg.py-20.shadow-2xl(class="bg-" + bg)
-    div(class="lg:w-7/12 xl:w-5/12")
+  - illustration = illustration || ''
+  .hero.p-10.rounded-lg.py-20.shadow-2xl.flex.flex-col.items-end(class="bg-" + bg + " xl:flex-row")
+    div(class="w-full xl:w-5/12 text-center xl:text-left")
       +h1(title)(class="text-" + titleColor)
       p.text-2xl.font-light(class="text-" + descriptionColor)!= description
       if block
         block
+    if illustration
+      div.-mb-20(class="w-full mt-10 xl:w-7/12 xl:pl-6 xl:mt-0")
+        img(src=illustration)

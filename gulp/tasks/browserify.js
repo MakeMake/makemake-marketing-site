@@ -59,7 +59,8 @@ let browserifyTask = (files, done) => {
         .pipe(
           gulpif(!args.production, plugins.sourcemaps.init({ loadMaps: true }))
         )
-        .pipe(gulpif(args.production, plugins.uglify()))
+        // Bug with Alpine 
+        // .pipe(gulpif(args.production, plugins.uglify()))
         .pipe(
           plugins.rename(function(filepath) {
             // Remove 'source' directory as well as prefixed folder underscores
