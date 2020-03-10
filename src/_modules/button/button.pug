@@ -9,3 +9,14 @@ mixin button(href, target, name, bg, text, hover, size)
         block
       else
         != name
+
+mixin buttonOutline(href, target, name, color, hover, size)
+  - color = color || 'black'
+  - hover = hover || 'blue-500'
+  - size = size || 'base'
+  a.border-t-2.border-l-2.border-r-2.border-b-4.px-6.py-2.inline-block.rounded.tracking-wide.font-medium.transition.duration-150.ease-in-out(class!=attributes.class class="border-" + color + " text-" + color + " hover:border-" + hover + " hover:text-" + hover + " text-" + size href=href target=target) 
+    .flex.items-center(class!=attributes.wrapperClass)
+      if block
+        block
+      else
+        != name

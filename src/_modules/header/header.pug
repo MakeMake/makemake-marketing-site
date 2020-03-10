@@ -6,9 +6,12 @@ mixin menu()
     li.nav-item.mr-10.py-2
       +link(item.path, item.name)
   div(:class="{ 'pt-4': menuOpen === true }")
-    +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank")
+    //- +button("https://airtable.com/shrnxdC4vhzlslUda", "_blank")
+    //-   | Get early access
+    //-   i.ml-1(data-feather="arrow-right", class= "text-white")
+    +buttonOutline("https://airtable.com/shrnxdC4vhzlslUda", "_blank")
       | Get early access
-      i.ml-1(data-feather="arrow-right", class= "text-white")
+      i.ml-1(data-feather="arrow-right") 
 
 .sticky.top-0.bg-white.z-50
   header#header.relative.bg-white.container.mx-auto.px-4.flex.items-center.justify-between.z-20(class="py-8 lg:py-12")
