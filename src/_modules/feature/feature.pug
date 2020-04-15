@@ -1,7 +1,8 @@
 mixin feature(item, color)
   div
-    .illustration.mb-4.rounded-lg.p-8.h-40(class= "bg-" + color + "-100")
-    .text-xl.font-medium.mb-2.text-black!= item.title 
+    .illustration.mb-4.rounded-lg.p-4(class= "bg-" + color + "-100") 
+      img.w-full(src!=item.illustration) 
+    .text-xl.font-medium.text-black!= item.title 
     .text-base.text-gray-600.font-light= item.description
 
 mixin tile(item)

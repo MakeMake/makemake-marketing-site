@@ -17,13 +17,13 @@ features:
       list:
         - title: Data table
           description: Design your data collections with the simplicity of a table.
-          illustration:
+          illustration: ./images/Database_DataTable.svg
         - title: Relations
           description: Connect your data collections with each other.
-          illustration:
+          illustration: ./images/Database_Relations.svg
         - title: Formulas
-          description: Extend your datas by playing with formulas in your data table.
-          illustration:
+          description: Extend your data reccords by playing with formulas.
+          illustration: ./images/Database_Formulas.svg
     - title: Included authentication
       description: Manage your user with included login and permission solution.
       path: auth
@@ -32,14 +32,14 @@ features:
       colorSecondary: 300
       illustration: ./images/Auth.svg
       list:
+        - title: User data table
+          description: You app contain allready a table with your end users.
+          illustration: ./images/Database_UserDataTable.svg
         - title: Login
-          description: Design your data collections with the simplicity of a table.
+          description: Simple login and logout integration.
           illustration:
         - title: Permissions
-          description: Connect your data collections with each other.
-          illustration:
-        - title: Security
-          description: Extend your datas by playing with formulas in your data table.
+          description: Manage your end users read and write permissions.
           illustration:
     - title: Easy interactions
       description: Create & update data and play with it in the simplest of ways.
