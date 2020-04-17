@@ -32,30 +32,30 @@ features:
       colorSecondary: 300
       illustration: ./images/Auth.svg
       list:
+        - title: Login
+          description: Simple login and logout integration.
+          illustration: ./images/Database_Login.svg
         - title: User data table
           description: You app contain allready a table with your end users.
           illustration: ./images/Database_UserDataTable.svg
-        - title: Login
-          description: Simple login and logout integration.
-          illustration:
         - title: Permissions
           description: Manage your end users read and write permissions.
-          illustration:
+          illustration: ./images/Database_Permissions.svg
     - title: Easy interactions
-      description: Create & update data and play with it in the simplest of ways.
+      description: Play with the data in the simplest of ways.
       path: lang
       color: green
       colorPrimary: 900
       colorSecondary: 900
       illustration: ./images/Interaction.svg
       list:
-        - title: Login
+        - title: Get your data
           description: Design your data collections with the simplicity of a table.
           illustration:
-        - title: Permissions
+        - title: Display datas
           description: Connect your data collections with each other.
           illustration:
-        - title: Security
+        - title: Create and update your data
           description: Extend your datas by playing with formulas in your data table.
           illustration:
     - title: Standard templating
