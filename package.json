@@ -4,7 +4,7 @@
   "dependencies": {
     "alpinejs": "^2.1.0",
     "feather-icons": "^4.26.0",
-    "jquery": "~3.4.1",
+    "jquery": "~3.5.0",
     "normalize.css": "~8.0.1",
     "tailwindcss": "^1.2.0"
   },
